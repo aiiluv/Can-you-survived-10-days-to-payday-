@@ -1,0 +1,27 @@
+[clear time="1.0"]
+[background arg="res://Background/home.svg" fade="0.0"]
+join mrrich center
+mrrich: Wake up! It's time to get to work.
+mrrich: The sun is shining, and it's time to earn some money!
+player (cry): Can I finally go outside? Oh my goodness... after three whole days of gameplay...
+mrrich (huh): Do I need to remind you that this is just a game, and you didn't actually spend three days here?
+mrrich (angry): Anyway, it's time to work! Get going!
+player (cry): I need to hurry! I have to hurry!
+[clear time="1.0"]
+[background arg="res://Background/motor.svg" fade="0.0"]
+player: ...
+join mrrich center
+mrrich: Oh no! It looks like your motorcycle has broken down!
+player (sadWork): ....
+mrrich: If you don't act quickly, you might be late for work!
+player: .....
+mrrich: So, what are you going to do?
+- Pay 15 coins for repairs
+- Walk to work and accept a 10-coin salary deduction
+[clear time="1.0"]
+player (sadWork): They're both terrible options! Ugh, this is so frustrating!
+mrrich: This is why it's important to set aside 10–20% of your income for an emergency fund when you get paid.
+mrrich: Unexpected events like a flat tire or getting sick can't be predicted.
+mrrich: Without an emergency fund, situations like these can seriously disrupt your finances before payday.
+player (work): haah....
+jump day4/

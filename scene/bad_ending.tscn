@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cxn1tkmfattts"]
+
+[ext_resource type="Texture2D" uid="uid://3f8vfnrm2e6m" path="res://MainMenuAsset/bg.svg" id="1_1bybb"]
+[ext_resource type="Texture2D" uid="uid://ccw8celj3v5cv" path="res://Character/angry mr.rich.svg" id="2_783cr"]
+
+[node name="BadEnding" type="Node2D" unique_id=1755255763]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=319023187]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1204131104]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1bybb")
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect" unique_id=723332327]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 49.0
+offset_right = 868.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 75
+text = "WHAT DID
+ YOU LEARN 
+FROM THE 
+PAST 10 DAYS "
+
+[node name="AngryMr_rich" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1526454428]
+position = Vector2(842, 421)
+rotation = -0.091878936
+scale = Vector2(0.25796157, 0.25796157)
+texture = ExtResource("2_783cr")

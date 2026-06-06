@@ -1,0 +1,30 @@
+[clear time="1.0"]
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join mrrich center
+mrrich: What a nice day, huh?
+player (sadHome): I dunno… we’ve been inside the house this whole game.
+mrrich (huh): Well, you don’t exactly have money to travel anyway.
+player: ...fair point.
+Ding! Ding!
+[clear time="1.0"]
+[background arg="res://Background/phone.svg" fade="0.0"]
+Congratulations! You've been selected to receive a flash investment, turning your $10 into $100 in 2 hours. Click this link!
+player: Woah… am I about to become rich?!
+player: Should I click this?
+- Click the link
+	[background arg="res://Background/default_bg.svg" fade="0.0"]
+	join mrrich (angry) center
+	mrrich (angry): Ahhh no! Your money’s gone because you got scammed!
+	mrrich (angry): Scammers often use fake prize messages, fake investments, or suspicious links to trick people.
+	mrrich (angry): They usually try to make you panic or get excited so you stop thinking carefully.
+	mrrich: And that’s why you should always...
+	mrrich (angry): Think before you click!
+- Ignore and block the number
+	[background arg="res://Background/default_bg.svg" fade="0.0"]
+	join mrrich center
+	mrrich: Nice move! That was definitely a scam message.
+	mrrich: A real investment or giveaway won’t magically make you rich overnight.
+	mrrich: Always remember\: High Risk, High Return.
+	mrrich (angry): If something promises massive rewards with “zero risk”… that’s a giant red flag.
+	mrrich: And never click random links from unknown numbers. They can steal your account, password, or even your money!
+jump day3/

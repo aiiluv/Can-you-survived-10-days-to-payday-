@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://dc27t1pcb2dcm"]
+
+[ext_resource type="Texture2D" uid="uid://3f8vfnrm2e6m" path="res://MainMenuAsset/bg.svg" id="1_5alto"]
+[ext_resource type="Script" uid="uid://bcp3kpkhsasxk" path="res://script/menu_screen.gd" id="1_v00j7"]
+[ext_resource type="Texture2D" uid="uid://2ujfysyfwhhh" path="res://MainMenuAsset/button.svg" id="2_v00j7"]
+[ext_resource type="Texture2D" uid="uid://dcmsuqh0cketv" path="res://MainMenuAsset/title.svg" id="3_q4d81"]
+[ext_resource type="Script" uid="uid://dexwytevvcsy1" path="res://script/play_btn.gd" id="4_hcx7q"]
+[ext_resource type="Texture2D" uid="uid://bbummbvo7wkns" path="res://MainMenuAsset/info.png" id="5_0ih6k"]
+[ext_resource type="Script" uid="uid://by7vr68fmye1p" path="res://script/title.gd" id="5_q4d81"]
+[ext_resource type="Script" uid="uid://wrhi03ovng8k" path="res://script/about_btn.gd" id="5_rkxeu"]
+
+[node name="MenuScreen" type="Node2D" unique_id=1433154130]
+script = ExtResource("1_v00j7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1872043818]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=890313153]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5alto")
+
+[node name="BtnManager" type="Control" parent="CanvasLayer/TextureRect" unique_id=1559766221]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayBtn" type="Button" parent="CanvasLayer/TextureRect/BtnManager" unique_id=223039633]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 182.0
+offset_top = 391.0
+offset_right = -142.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(414, 116)
+icon = ExtResource("2_v00j7")
+flat = true
+script = ExtResource("4_hcx7q")
+
+[node name="About" type="Button" parent="CanvasLayer/TextureRect/BtnManager" unique_id=1539568056]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1043.0
+offset_top = 53.0
+offset_right = -47.0
+offset_bottom = -542.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(31, 26.5)
+icon = ExtResource("5_0ih6k")
+flat = true
+script = ExtResource("5_rkxeu")
+
+[node name="Title" type="Button" parent="CanvasLayer/TextureRect/BtnManager" unique_id=896365212]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 162.0
+offset_top = 65.0
+offset_right = 1061.0
+offset_bottom = 331.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+icon = ExtResource("3_q4d81")
+flat = true
+script = ExtResource("5_q4d81")
+
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/BtnManager/PlayBtn" to="CanvasLayer/TextureRect/BtnManager/PlayBtn" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/BtnManager/PlayBtn" to="CanvasLayer/TextureRect/BtnManager/PlayBtn" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnManager/PlayBtn" to="CanvasLayer/TextureRect/BtnManager/PlayBtn" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/BtnManager/About" to="CanvasLayer/TextureRect/BtnManager/About" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/BtnManager/About" to="CanvasLayer/TextureRect/BtnManager/About" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnManager/About" to="CanvasLayer/TextureRect/BtnManager/About" method="_on_pressed"]

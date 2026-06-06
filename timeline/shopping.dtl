@@ -1,0 +1,8 @@
+[background arg="res://Background/supermarket.svg" fade="0.0"]
+It's a good day to do shopping!
+it's that what you think?
+No!
+Instead of shopping calmly while calculating expenses, you must race against time while facing their greatest financial enemy\: INFLATION!
+buy all the stuffs that we need before the price went up!
+[clear time="1.0"]
+[signal arg="DoneGame3"]

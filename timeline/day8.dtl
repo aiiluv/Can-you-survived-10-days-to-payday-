@@ -1,0 +1,22 @@
+[clear time="1.0"]
+[background arg="res://Background/office.svg" fade="0.0"]
+join mrrich center
+mrrich: Hello player!
+mrrich: Hehe, how's it going? Have you gotten used to this daily routine yet?
+- maybe, yeah..
+	mrrich: Good! Keep going and make it to the end, okay?
+- aghh, let's finish it already!
+	mrrich: Haha! Living paycheck to paycheck isn't easy, but hey, there are only two days left!
+mrrich: Anyway, your coworkers are drinking expensive trendy iced milk coffee.
+mrrich: With this hot weather making everyone thirsty, an iced coffee sounds really tempting!
+mrrich: So, what do you think? Are you tempted to buy one?
+- buy one too (20 coin)
+	mrrich: Haha! You couldn't resist the temptation, huh?
+	mrrich: Unfortunately, you just gave in to a short-term desire for enjoyment.
+- Drink the Free Tea/Coffee Provided at Work
+	mrrich: Amazing!
+	mrrich: You just practiced Delayed Gratification.
+	mrrich: This means you're willing to postpone short-term pleasure in exchange for long-term financial security.
+	mrrich: People who achieve financial success often have strong self-control and are able to delay gratification when necessary.
+	mrrich: Keep it up, player! Stay strong and make it through the remaining days!
+jump day9/

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://d4kahcjniaufo"]
+
+[ext_resource type="Script" uid="uid://yypo05o722ig" path="res://script/about.gd" id="1_cnakb"]
+[ext_resource type="Texture2D" uid="uid://3f8vfnrm2e6m" path="res://MainMenuAsset/bg.svg" id="1_dtbah"]
+[ext_resource type="Texture2D" uid="uid://dao64hiykqnax" path="res://MainMenuAsset/credit.png" id="3_h7pnm"]
+[ext_resource type="Texture2D" uid="uid://dmk748mdjeyut" path="res://MainMenuAsset/backBtn.svg" id="4_xrvhw"]
+[ext_resource type="Script" uid="uid://b83efknmxpu0f" path="res://script/back.gd" id="5_lhkad"]
+
+[node name="About" type="Node2D" unique_id=532501273]
+script = ExtResource("1_cnakb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=814719074]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=682616650]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_dtbah")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1665989778]
+position = Vector2(597.00006, 353)
+scale = Vector2(0.8757062, 0.85583943)
+texture = ExtResource("3_h7pnm")
+
+[node name="Back" type="Button" parent="CanvasLayer/TextureRect" unique_id=1068264720]
+layout_mode = 0
+offset_left = -312.0
+offset_top = -152.0
+offset_right = 616.0
+offset_bottom = 304.0
+scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(456, 228)
+icon = ExtResource("4_xrvhw")
+flat = true
+script = ExtResource("5_lhkad")
+
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/Back" to="CanvasLayer/TextureRect/Back" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/Back" to="CanvasLayer/TextureRect/Back" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Back" to="CanvasLayer/TextureRect/Back" method="_on_pressed"]

@@ -1,0 +1,41 @@
+[clear time="1.0"]
+[background arg="res://Background/Room.svg" fade="0.0"]
+join  center
+mrrich: It’s a calm and peaceful night...
+mrrich: But suddenly... your stomach starts growling. You need food!
+player: Uh, no I don’t?
+[background arg="res://Background/roomWtMrRich.svg" fade="0.0"]
+mrrich: Yes, you do. You’re hungry.
+player: But I’m not—
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join mrrich (angry) center
+mrrich: Don’t interrupt my narration.
+mrrich: Anyway, you’re hungry. And you need to eat.
+mrrich: You’ve got two choices.
+[clear time="1.0"]
+[background arg="res://Background/foodie.svg" fade="0.0"]
+mrrich: First... you can order some delicious food delivery.
+mrrich: It’s quick, easy, and you don’t have to go outside.
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join mrrich center
+mrrich: Or second... you can leave your tiny little apartment room...
+[clear time="1.0"]
+[background arg="res://Background/outside.svg" fade="0.0"]
+mrrich: and look for some street food nearby.
+mrrich: So, what’ll it be?
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join mrrich center
+mrrich: Oh, and just so you know...
+mrrich: Delivery food costs around 20 coins.
+mrrich: and Street food is cheaper, about 10 to 12 coins!
+- Delivery food
+	mrrich (angry): You do know your wallet’s getting pretty thin, right?
+	mrrich (angry): Try to think more about the next few days ahead!
+	mrrich: Sure, treating yourself once in a while is totally fine...
+	mrrich (angry): But in a situation like this, your needs should come first!
+- Street food
+	mrrich: Nice choice! By picking option B, you saved more of your money.
+	mrrich: In financial literacy, this is called choosing your needs over your wants.
+	mrrich: You needed energy to survive the day… not fancy expensive food just for style points.
+	mrrich: Small choices like this can help your money last longer until payday!
+jump day2/

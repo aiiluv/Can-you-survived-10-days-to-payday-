@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c5hf26n234llv"]
+
+[ext_resource type="Texture2D" uid="uid://c4ioheovmp4cp" path="res://Background/default_bg.svg" id="1_gpmqe"]
+[ext_resource type="Texture2D" uid="uid://bj7064vmg6mdu" path="res://MainMenuAsset/winCongrats.svg" id="2_7sxcw"]
+[ext_resource type="Script" uid="uid://bn5tqbcd7qdj7" path="res://script/Titlewin_congrats.gd" id="3_gl5aj"]
+
+[node name="Congrats" type="Node2D" unique_id=939679231]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1706803049]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=188857903]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -88.000244
+offset_top = -215.00012
+offset_right = 5604.0
+offset_bottom = 3721.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("1_gpmqe")
+
+[node name="WinCongrats" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=2137462545]
+position = Vector2(3485.0015, 2575.0005)
+scale = Vector2(1.478622, 1.5119153)
+texture = ExtResource("2_7sxcw")
+script = ExtResource("3_gl5aj")

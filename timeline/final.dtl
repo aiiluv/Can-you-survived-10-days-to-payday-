@@ -1,0 +1,23 @@
+[clear time="1.0"]
+[background arg="res://Background/office.svg" fade="0.0"]
+join mrrich center
+mrrich: Finally, payday has arrived!
+mrrich: Congratulations, player! Here are your hard-earned salary coins!
+[clear time="1.0"]
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join player (cry) center
+player (cry): At last... after surviving for so long...
+player (cry): sniff... sniff...
+mrrich: Huh?! Are you crying?
+[clear time="1.0"]
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+player (happy): And now...
+[background arg="res://Background/supermarket.svg" fade="0.0"]
+player (happy): It's time to spend all this money!
+player (happy): HAHAHAHHAHA
+player (happy): Chewy dubai cookies, here i come!
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join mrrich (huh) center
+mrrich: sigh....
+mrrich (huh): Well, I suppose that's one way to celebrate.
+[signal arg="ending"]

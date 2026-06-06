@@ -1,0 +1,15 @@
+[clear time="1.0"]
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join player center
+player (sadHome): Finally, there's only one day left until payday!
+player (sadHome): Ah, let me check my wallet. I wonder how much money I have left...
+player (sadHome): Huh...? Why is there so little left?
+player (sadHome): Where did all my money go?
+[clear time="1.0"]
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join mrrich center
+mrrich: That's exactly why we keep track of our expenses!
+mrrich: Tracking your spending is one of the first steps toward financial literacy.
+mrrich: If you don't keep records, your money can quietly disappear without you even realizing it.
+mrrich: By reviewing your expense history, you can identify where you've been overspending and make better financial decisions next month!
+jump final/

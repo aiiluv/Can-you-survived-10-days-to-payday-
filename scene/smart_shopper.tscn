@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://day8x88rqp80d"]
+
+[ext_resource type="Script" uid="uid://dcuaiac8nqipo" path="res://script/smart_shopper.gd" id="1_n0n3j"]
+[ext_resource type="Texture2D" uid="uid://hj3tqqmhm3jc" path="res://elements/case1.svg" id="1_yonmp"]
+[ext_resource type="Texture2D" uid="uid://divx5o50pc3lv" path="res://elements/case2.svg" id="2_be4pm"]
+[ext_resource type="Texture2D" uid="uid://b65bdlh77vtge" path="res://elements/case3.svg" id="3_n0n3j"]
+[ext_resource type="Texture2D" uid="uid://bwd42ieaxqcf4" path="res://elements/case4.svg" id="4_r3cey"]
+[ext_resource type="Texture2D" uid="uid://dmk748mdjeyut" path="res://MainMenuAsset/backBtn.svg" id="6_qpt4s"]
+[ext_resource type="Script" uid="uid://b83efknmxpu0f" path="res://script/back.gd" id="7_xlneo"]
+
+[node name="SmartShopper" type="Node2D" unique_id=1595958998]
+script = ExtResource("1_n0n3j")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1884177869]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=621456327]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4214, 0.98, 0.95207006, 1)
+
+[node name="MissionPanel" type="Panel" parent="CanvasLayer" unique_id=961414606]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 121.99999
+offset_top = -14.000008
+offset_right = -253.0
+offset_bottom = -111.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+pivot_offset = Vector2(700, 497)
+
+[node name="Rect" type="ColorRect" parent="CanvasLayer/MissionPanel" unique_id=473748064]
+layout_mode = 0
+offset_right = 784.0
+offset_bottom = 551.0
+color = Color(0.09224298, 0.76817554, 0.84909725, 1)
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/MissionPanel" unique_id=561241709]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 45.0
+offset_right = 310.0
+offset_bottom = 279.0
+color = Color(1.92523e-06, 0.564411, 0.70243883, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/MissionPanel" unique_id=1126645315]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 45.0
+offset_right = 748.0
+offset_bottom = 279.0
+color = Color(1.92523e-06, 0.564411, 0.70243883, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/MissionPanel" unique_id=2133396258]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 295.0
+offset_right = 504.0
+offset_bottom = 352.0
+color = Color(3.1766297e-06, 0.55119205, 0.7684272, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="CanvasLayer/MissionPanel" unique_id=2123865188]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 295.0
+offset_right = 747.0
+offset_bottom = 352.0
+color = Color(3.1766297e-06, 0.55119205, 0.7684272, 1)
+
+[node name="MissionTitle" type="Label" parent="CanvasLayer/MissionPanel" unique_id=609864109]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 92.0
+offset_top = 301.0
+offset_right = 469.0
+offset_bottom = 342.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemDescription" type="Label" parent="CanvasLayer/MissionPanel" unique_id=1881455257]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 0
+offset_left = 346.25
+offset_top = 66.0
+offset_right = 713.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 20
+
+[node name="case1" type="TextureRect" parent="CanvasLayer/MissionPanel" unique_id=806814407]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 101.0
+offset_top = 78.00001
+offset_right = 1657.0
+offset_bottom = 1726.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_yonmp")
+
+[node name="case2" type="TextureRect" parent="CanvasLayer/MissionPanel" unique_id=943735776]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 66.00001
+offset_top = 76.00001
+offset_right = 2210.0
+offset_bottom = 1724.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_be4pm")
+
+[node name="case3" type="TextureRect" parent="CanvasLayer/MissionPanel" unique_id=214169967]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 53.000008
+offset_top = 83.00001
+offset_right = 2517.0
+offset_bottom = 1731.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_n0n3j")
+
+[node name="case4" type="TextureRect" parent="CanvasLayer/MissionPanel" unique_id=539780339]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 72.00001
+offset_top = 82.00001
+offset_right = 2072.0
+offset_bottom = 1730.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_r3cey")
+
+[node name="Buy" type="Button" parent="CanvasLayer/MissionPanel" unique_id=106785917]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 401.0
+offset_right = 313.0
+offset_bottom = 466.0
+text = "Buy"
+
+[node name="Alternative" type="Button" parent="CanvasLayer/MissionPanel" unique_id=12699080]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 400.0
+offset_right = 491.0
+offset_bottom = 465.0
+text = "Alternative"
+
+[node name="Skip" type="Button" parent="CanvasLayer/MissionPanel" unique_id=1216060051]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 401.0
+offset_right = 670.0
+offset_bottom = 466.0
+text = "Skip
+"
+
+[node name="ReceiptPanel" type="Panel" parent="CanvasLayer" unique_id=2081471180]
+unique_name_in_owner = true
+visible = false
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 931.0
+offset_bottom = 625.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/ReceiptPanel" unique_id=1700672815]
+layout_mode = 0
+offset_right = 666.0
+offset_bottom = 610.0
+color = Color(1, 0.82916665, 0.59000003, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/ReceiptPanel" unique_id=739118172]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 324.0
+offset_right = 643.0
+offset_bottom = 495.0
+color = Color(0.74, 0.5569734, 0.34780002, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/ReceiptPanel" unique_id=1949993770]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 32.0
+offset_right = 643.0
+offset_bottom = 308.0
+color = Color(0.68, 0.52224, 0.3536, 1)
+
+[node name="ReceiptText" type="Label" parent="CanvasLayer/ReceiptPanel" unique_id=1433569622]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 64.0
+offset_right = 607.0
+offset_bottom = 274.0
+theme_override_font_sizes/font_size = 20
+
+[node name="NarratorLabel" type="Label" parent="CanvasLayer/ReceiptPanel" unique_id=475596722]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 343.0
+offset_right = 621.0
+offset_bottom = 480.0
+theme_override_font_sizes/font_size = 15
+
+[node name="BtnDone" type="Button" parent="CanvasLayer/ReceiptPanel" unique_id=570795388]
+layout_mode = 0
+offset_left = 458.0
+offset_top = 513.0
+offset_right = 630.0
+offset_bottom = 580.0
+text = "DONE"
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer" unique_id=230576790]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 947.0
+offset_top = 94.0
+offset_right = -34.0
+offset_bottom = -478.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09334677, 0.3391262, 0.741084, 1)
+
+[node name="Budget label" type="Label" parent="CanvasLayer" unique_id=1691152290]
+offset_left = 965.0
+offset_top = 109.0
+offset_right = 1105.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 15
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="CanvasLayer" unique_id=82009753]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -330.00003
+offset_top = -154.00002
+offset_right = -554.0
+offset_bottom = -346.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(464, 228)
+icon = ExtResource("6_qpt4s")
+flat = true
+script = ExtResource("7_xlneo")
+
+[connection signal="pressed" from="CanvasLayer/MissionPanel/Buy" to="." method="_on_buy_pressed"]
+[connection signal="pressed" from="CanvasLayer/MissionPanel/Alternative" to="." method="_on_alternative_pressed"]
+[connection signal="pressed" from="CanvasLayer/MissionPanel/Skip" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="CanvasLayer/ReceiptPanel/BtnDone" to="." method="_on_btn_done_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Back" to="CanvasLayer/Back" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Back" to="CanvasLayer/Back" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/Back" to="CanvasLayer/Back" method="_on_pressed"]

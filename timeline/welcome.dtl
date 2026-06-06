@@ -1,0 +1,7 @@
+join mrrich center
+mrrich: Hey, player! I’m Mr. Rich, your boss and also your guide in this game!
+mrrich: Just like the title says, this game is all about surviving 10 days before payday comes.
+mrrich: So… ready to start?
+- Of course!
+	mrrich: Great! Let’s get started then!
+jump day1/

@@ -1,0 +1,39 @@
+[clear time="1.0"]
+[background arg="res://Background/office.svg" fade="0.0"]
+Just another ordinary day at the office.
+Nothing special happened.
+join player (work) center
+player (happy): Why would there be anything special, anyway?
+player (happy): I'm already grateful that nothing unpleasant happened, like a flat tire or anything else!
+[clear time="1.0"]
+join mrrich center
+mrrich: It's been a wonderful day, hasn't it?
+[clear time="1.0"]
+join player (sadWork) center
+player: Oh my goodness...
+mrrich: Good for you! I have some news\: tomorrow, we're holding a free digital certification training session on our day off!
+mrrich: Will you join?
+[clear time="1.0"]
+[background arg="res://Background/default_bg.svg" fade="0.0"]
+join player (work) center
+player: Lemme think..
+player: A free digital certification training session on my day off... but I'm really tired and just want to sleep all day.
+player: Should I attend the training?
+player: Or should I stay home? Maybe I could buy a second-hand personal finance book for 5 coins instead.
+player: As a substitute for the training?
+- Sleep all day
+	player: Hmm... I think I'd rather stay home and sleep all day.
+	player: Rest is important too, isn't it?
+- Attend the Free Training
+	[clear time="1.0"]
+	join mrrich center
+	mrrich: Good choice, player!
+	mrrich: The best investment isn't always stocks—sometimes it's investing in your own education and skills.
+	mrrich: In the future, the knowledge and certification you gain today could help increase your earning potential and make you more valuable in the job market!
+- just buy the book
+	[clear time="1.0"]
+	join mrrich center
+	mrrich: not bad player!
+	mrrich: The best investment isn't always stocks—sometimes it's investing in your own education and skills.
+	mrrich: In the future, the knowledge and certification you gain today could help increase your earning potential and make you more valuable in the job market!
+jump day5/

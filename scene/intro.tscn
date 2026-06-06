@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://d1cul68kwcr14"]
+
+[ext_resource type="Script" uid="uid://d0xq1rn454msf" path="res://script/intro.gd" id="1_itxqv"]
+[ext_resource type="Texture2D" uid="uid://ne1b4rjytxeh" path="res://Background/irineesan_itch.io.svg" id="2_v0l8b"]
+
+[sub_resource type="Animation" id="Animation_wp4xf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_brvut"]
+resource_name = "fadein"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0ha60"]
+resource_name = "fadeout"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4j5ol"]
+_data = {
+&"RESET": SubResource("Animation_wp4xf"),
+&"fadein": SubResource("Animation_brvut"),
+&"fadeout": SubResource("Animation_0ha60")
+}
+
+[node name="Intro" type="Node2D" unique_id=1025004433]
+script = ExtResource("1_itxqv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1437673606]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1984868717]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 4614.9995
+offset_bottom = 2697.9998
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_v0l8b")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=2102628813]
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -329.99988
+offset_top = -149.99994
+offset_right = 434.0
+offset_bottom = 342.66626
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TextureRect" unique_id=2022124768]
+root_node = NodePath("../../..")
+libraries/ = SubResource("AnimationLibrary_4j5ol")

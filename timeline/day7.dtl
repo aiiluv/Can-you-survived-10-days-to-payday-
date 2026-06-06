@@ -1,0 +1,12 @@
+[clear time="1.0"]
+[background arg="res://Background/outside.svg" fade="0.0"]
+You stop by your favorite food stall to buy your usual budget lunch.
+To your surprise, the price has increased from 10 coins to 13 coins.
+The owner explains that the cost of ingredients at the market has gone up.
+This is called inflation. Over time, the value of money decreases, causing goods and services to become more expensive.
+join mrrich center
+mrrich: Because inflation is real, keeping all of your money under your mattress,
+mrrich: or even in a regular savings account, can reduce your purchasing power in the future.
+mrrich: So, what's the solution?
+mrrich: Learn how to invest!
+jump day8/

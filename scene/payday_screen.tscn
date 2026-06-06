@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://fp31t4twvg23"]
+
+[ext_resource type="Texture2D" uid="uid://dmk748mdjeyut" path="res://MainMenuAsset/backBtn.svg" id="1_1gnkp"]
+[ext_resource type="Script" uid="uid://dlrms0d15rson" path="res://script/payday_screen.gd" id="1_sgd6t"]
+[ext_resource type="Script" uid="uid://b83efknmxpu0f" path="res://script/back.gd" id="2_45xp4"]
+[ext_resource type="Texture2D" uid="uid://3f8vfnrm2e6m" path="res://MainMenuAsset/bg.svg" id="3_45xp4"]
+[ext_resource type="Script" uid="uid://bn404tlyijl4b" path="res://script/help.gd" id="5_avfd8"]
+[ext_resource type="Texture2D" uid="uid://cbvrdcih08irh" path="res://MainMenuAsset/HelpBtn.svg" id="5_el4qd"]
+[ext_resource type="Texture2D" uid="uid://cvdvjtsv2se0f" path="res://MainMenuAsset/Tips.svg" id="7_nfmt7"]
+[ext_resource type="Script" uid="uid://5tgf85ab2x1g" path="res://script/tips_win.gd" id="8_nfmt7"]
+
+[node name="payday_screen" type="Node2D" unique_id=1642312737]
+script = ExtResource("1_sgd6t")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=914789159]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=14911786]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_45xp4")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=2004773996]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 89.0
+offset_right = 1029.0
+offset_bottom = 650.0
+color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1346700488]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 124.0
+offset_right = 686.0
+offset_bottom = 493.0
+color = Color(0.16924527, 0.1692453, 0.16924521, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=776165372]
+layout_mode = 0
+offset_left = 712.0
+offset_top = 127.0
+offset_right = 995.0
+offset_bottom = 496.0
+color = Color(0.16924527, 0.1692453, 0.16924521, 1)
+
+[node name="LabelStatus" type="Label" parent="CanvasLayer/TextureRect" unique_id=729400716]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 142.0
+offset_right = 667.0
+offset_bottom = 247.0
+theme_override_font_sizes/font_size = 25
+text = "Payday has arrived!
+Your balance has reached 100 coins."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelSisa" type="Label" parent="CanvasLayer/TextureRect" unique_id=1571236201]
+layout_mode = 0
+offset_left = 302.0
+offset_top = 239.0
+offset_right = 589.0
+offset_bottom = 274.0
+theme_override_font_sizes/font_size = 25
+text = "Remaining coins: 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnKebutuhan" type="Button" parent="CanvasLayer/TextureRect" unique_id=193439506]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 291.0
+offset_right = 619.0
+offset_bottom = 341.0
+theme_override_font_sizes/font_size = 20
+text = "basic needs"
+
+[node name="BtnPlus" type="Button" parent="CanvasLayer/TextureRect" unique_id=2067774719]
+layout_mode = 0
+offset_left = 617.0
+offset_top = 509.0
+offset_right = 680.0
+offset_bottom = 559.0
+theme_override_font_sizes/font_size = 30
+text = "+"
+
+[node name="BtnMinus" type="Button" parent="CanvasLayer/TextureRect" unique_id=1839214177]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 508.0
+offset_right = 601.0
+offset_bottom = 558.0
+theme_override_font_sizes/font_size = 30
+text = "-"
+
+[node name="BtnBack" type="Button" parent="CanvasLayer/TextureRect" unique_id=1552582195]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 509.0
+offset_right = 320.0
+offset_bottom = 559.0
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="BtnSubmit" type="Button" parent="CanvasLayer/TextureRect" unique_id=263154680]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 574.0
+offset_right = 992.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 20
+text = "Submit"
+
+[node name="BtnTabungan" type="Button" parent="CanvasLayer/TextureRect" unique_id=1296875783]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 352.0
+offset_right = 618.0
+offset_bottom = 402.0
+theme_override_font_sizes/font_size = 20
+text = "savings & investment"
+
+[node name="BtnDarurat" type="Button" parent="CanvasLayer/TextureRect" unique_id=1003263546]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 416.0
+offset_right = 618.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 20
+text = "emergency fund"
+
+[node name="HBoxContainer" type="VBoxContainer" parent="CanvasLayer/TextureRect" unique_id=238428537]
+layout_mode = 0
+offset_left = 734.0
+offset_top = 155.0
+offset_right = 959.0
+offset_bottom = 469.0
+
+[node name="KebutuhanPokok" type="Label" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=1607580346]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "basic needs = 0"
+
+[node name="Tabungan" type="Label" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=604339853]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Savings= 0"
+
+[node name="Darurat" type="Label" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=1786483635]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Emergency= 0"
+
+[node name="Back" type="Button" parent="CanvasLayer/TextureRect" unique_id=61403045]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -330.00003
+offset_top = -154.00002
+offset_right = -554.0
+offset_bottom = -346.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(464, 228)
+icon = ExtResource("1_1gnkp")
+flat = true
+script = ExtResource("2_45xp4")
+
+[node name="Help" type="Button" parent="CanvasLayer/TextureRect" unique_id=1149333387]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -331.00003
+offset_top = -57.000023
+offset_right = -555.0
+offset_bottom = -249.00003
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(464, 228)
+icon = ExtResource("5_el4qd")
+flat = true
+script = ExtResource("5_avfd8")
+
+[node name="TipsWin" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1587411299]
+position = Vector2(589, 327)
+scale = Vector2(0.16006786, 0.16006787)
+texture = ExtResource("7_nfmt7")
+script = ExtResource("8_nfmt7")
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnKebutuhan" to="." method="_on_btn_kebutuhan_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnPlus" to="." method="_on_btn_plus_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnMinus" to="." method="_on_btn_minus_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnBack" to="." method="_on_btn_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnSubmit" to="." method="_on_btn_submit_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnTabungan" to="." method="_on_btn_tabungan_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnDarurat" to="." method="_on_btn_darurat_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/Back" to="CanvasLayer/TextureRect/Back" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/Back" to="CanvasLayer/TextureRect/Back" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Back" to="CanvasLayer/TextureRect/Back" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/Help" to="CanvasLayer/TextureRect/Help" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/Help" to="CanvasLayer/TextureRect/Help" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Help" to="CanvasLayer/TextureRect/Help" method="_on_pressed"]

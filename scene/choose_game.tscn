@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://vi6lcb3mq5lt"]
+
+[ext_resource type="Script" uid="uid://cq0e554m2c8js" path="res://script/choose_game.gd" id="1_1yur0"]
+[ext_resource type="Texture2D" uid="uid://3f8vfnrm2e6m" path="res://MainMenuAsset/bg.svg" id="2_81kam"]
+[ext_resource type="Script" uid="uid://bqlr26ye3ir2l" path="res://script/btnStory.gd" id="2_mnlf3"]
+[ext_resource type="Script" uid="uid://by88iceealte" path="res://script/btnPayday.gd" id="3_81kam"]
+[ext_resource type="Texture2D" uid="uid://csg77feeares0" path="res://MainMenuAsset/game2.svg" id="3_tbprp"]
+[ext_resource type="Texture2D" uid="uid://cn1he5n2bn231" path="res://MainMenuAsset/game1.svg" id="5_vknqk"]
+[ext_resource type="Texture2D" uid="uid://c5lpph8rbpyrm" path="res://MainMenuAsset/game3.svg" id="7_cca4b"]
+[ext_resource type="Script" uid="uid://dbsfbmqiqir1e" path="res://script/BtnInflation.gd" id="8_ssj6r"]
+[ext_resource type="Texture2D" uid="uid://cply5w0kr5jyc" path="res://MainMenuAsset/game4.svg" id="9_thq7i"]
+[ext_resource type="Script" uid="uid://uscbkte7ux7d" path="res://script/BtnSmartShopper.gd" id="10_vtloj"]
+
+[node name="Control" type="Control" unique_id=1479347380]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1yur0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1212087605]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=2006666912]
+offset_right = 1153.0
+offset_bottom = 648.0
+texture = ExtResource("2_81kam")
+
+[node name="Payday" type="Button" parent="CanvasLayer/TextureRect" unique_id=1040200446]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.09
+offset_top = -847.0
+offset_right = 678.91003
+offset_bottom = 526.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.135, 0.135)
+pivot_offset = Vector2(1066, 1010.5)
+icon = ExtResource("3_tbprp")
+flat = true
+script = ExtResource("3_81kam")
+
+[node name="Story" type="Button" parent="CanvasLayer/TextureRect" unique_id=391864995]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -674.08997
+offset_top = -847.0825
+offset_right = 304.91003
+offset_bottom = 525.9175
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.135, 0.135)
+pivot_offset = Vector2(1066, 1010.5)
+icon = ExtResource("5_vknqk")
+flat = true
+script = ExtResource("2_mnlf3")
+
+[node name="Inflation" type="Button" parent="CanvasLayer/TextureRect" unique_id=355173335]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -534.0
+offset_right = 679.0
+offset_bottom = 839.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.135, 0.135)
+pivot_offset = Vector2(1066, 1010.5)
+icon = ExtResource("7_cca4b")
+flat = true
+script = ExtResource("8_ssj6r")
+
+[node name="SmartShopper" type="Button" parent="CanvasLayer/TextureRect" unique_id=1370582218]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -674.08997
+offset_top = -534.0825
+offset_right = 304.91003
+offset_bottom = 838.9175
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.135, 0.135)
+pivot_offset = Vector2(1066, 1010.5)
+icon = ExtResource("9_thq7i")
+flat = true
+script = ExtResource("10_vtloj")
+
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/Payday" to="CanvasLayer/TextureRect/Payday" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/Payday" to="CanvasLayer/TextureRect/Payday" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Payday" to="CanvasLayer/TextureRect/Payday" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/Story" to="CanvasLayer/TextureRect/Story" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/Story" to="CanvasLayer/TextureRect/Story" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Story" to="CanvasLayer/TextureRect/Story" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/Inflation" to="CanvasLayer/TextureRect/Inflation" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/Inflation" to="CanvasLayer/TextureRect/Inflation" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Inflation" to="CanvasLayer/TextureRect/Inflation" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/SmartShopper" to="CanvasLayer/TextureRect/SmartShopper" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/SmartShopper" to="CanvasLayer/TextureRect/SmartShopper" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/SmartShopper" to="CanvasLayer/TextureRect/SmartShopper" method="_on_pressed"]

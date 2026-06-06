@@ -1,0 +1,19 @@
+[clear time="1.0"]
+[background arg="res://Background/park.svg" fade="0.0"]
+On your way home from work, you pass by a bakery selling chewy Dubai cookies.
+You look at the cookies and start imagining how delicious they must taste...
+join player (work) center
+player (cry): They look so good...
+player (work): Maybe I should buy one?
+- Buy it before it sells out! (12 coins)
+	After buying it, you realize that you just spent 12 coins near the end of the month...
+	Now you have to think about what you're going to eat when you get home.
+	player (cry): worth it i would say
+- Don't Buy It
+	[clear time="1.0"]
+	join mrrich center
+	mrrich: Good job!
+	mrrich: You managed to resist the urge of impulsive spending!
+	mrrich: Keep it up and survive until Day 10!
+	player (cry): oh dear...
+jump day7/

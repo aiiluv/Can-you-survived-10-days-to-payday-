@@ -1,0 +1,26 @@
+[clear time="1.0"]
+[background arg="res://Background/home.svg" fade="0.0"]
+player (sadHome): Today is a day off, and honestly, I'm feeling pretty bored.
+join player (neutral) center
+player (sadHome): It would be nice to go to the cinema and watch a movie!
+mrrich: Did I hear someone wants to watch a movie?
+player (sadHome): not again..
+[clear time="1.0"]
+join mrrich center
+mrrich: A movie, huh? Yeah, that does sound fun!
+mrrich: Alright, how about this...
+mrrich: You have two choices!
+[background arg="res://Background/bioskop.svg" fade="0.0"]
+mrrich: Watch a movie at the cinema
+[background arg="res://Background/park.svg" fade="0.0"]
+mrrich: Or take a walk in the city park! You know, touch some grass.
+mrrich: Time to choose!
+- Watch a Movie (15 coins)
+	mrrich (angry): Alright, I'll let you have this one...
+- touch some grass (free)
+	mrrich: Haha! A wise choice, player!
+	mrrich: By choosing the free option, you didn't just save 15 coins.
+	mrrich: That 15 coins now has the opportunity to be used for something else, like buying nutritious food tomorrow.
+	mrrich: Every time you spend money on one thing, you give up the opportunity to spend it on something else.
+	mrrich: That's called an opportunity cost—the value of the alternative you chose not to take.
+jump day6/
